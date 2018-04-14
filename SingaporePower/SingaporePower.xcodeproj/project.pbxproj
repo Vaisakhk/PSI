@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEF98D502081AD6500BF1448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D4E2081AD6500BF1448 /* Main.storyboard */; };
+		CEF98D522081AD6700BF1448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D512081AD6700BF1448 /* Assets.xcassets */; };
+		CEF98D552081AD6700BF1448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D532081AD6700BF1448 /* LaunchScreen.storyboard */; };
+		CEF98D632081ADB600BF1448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D5D2081ADB500BF1448 /* AppDelegate.swift */; };
+		CEF98D642081ADB600BF1448 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D612081ADB600BF1448 /* ViewController.swift */; };
+		E86C24E9FB6F953353F5C780 /* Pods_SingaporePower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7FCC96D0BB2F71B2B6BDE109 /* Pods-SingaporePower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePower.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower.release.xcconfig"; sourceTree = "<group>"; };
+		9C8A130EFA3247EE35079B94 /* Pods-SingaporePower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower.debug.xcconfig"; sourceTree = "<group>"; };
+		CEF98D472081AD6500BF1448 /* SingaporePower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingaporePower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF98D4F2081AD6500BF1448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEF98D512081AD6700BF1448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF98D542081AD6700BF1448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEF98D562081AD6700BF1448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF98D5D2081ADB500BF1448 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEF98D612081ADB600BF1448 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingaporePower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF98D442081AD6500BF1448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86C24E9FB6F953353F5C780 /* Pods_SingaporePower.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67B61593122E86C712877839 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C8A130EFA3247EE35079B94 /* Pods-SingaporePower.debug.xcconfig */,
+				7FCC96D0BB2F71B2B6BDE109 /* Pods-SingaporePower.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CEF98D3E2081AD6500BF1448 = {
+			isa = PBXGroup;
+			children = (
+				CEF98D492081AD6500BF1448 /* SingaporePower */,
+				CEF98D482081AD6500BF1448 /* Products */,
+				67B61593122E86C712877839 /* Pods */,
+				F01BF4422F30D1215536F7E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF98D482081AD6500BF1448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF98D472081AD6500BF1448 /* SingaporePower.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF98D492081AD6500BF1448 /* SingaporePower */ = {
+			isa = PBXGroup;
+			children = (
+				CEF98D5C2081ADB500BF1448 /* AppDelegate */,
+				CEF98D622081ADB600BF1448 /* Helpers */,
+				CEF98D5E2081ADB500BF1448 /* Models */,
+				CEF98D602081ADB600BF1448 /* ViewController */,
+				CEF98D5F2081ADB500BF1448 /* Views */,
+				CEF98D4E2081AD6500BF1448 /* Main.storyboard */,
+				CEF98D512081AD6700BF1448 /* Assets.xcassets */,
+				CEF98D532081AD6700BF1448 /* LaunchScreen.storyboard */,
+				CEF98D562081AD6700BF1448 /* Info.plist */,
+			);
+			path = SingaporePower;
+			sourceTree = "<group>";
+		};
+		CEF98D5C2081ADB500BF1448 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CEF98D5D2081ADB500BF1448 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CEF98D5E2081ADB500BF1448 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEF98D5F2081ADB500BF1448 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEF98D602081ADB600BF1448 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEF98D612081ADB600BF1448 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CEF98D622081ADB600BF1448 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F01BF4422F30D1215536F7E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF98D462081AD6500BF1448 /* SingaporePower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF98D592081AD6700BF1448 /* Build configuration list for PBXNativeTarget "SingaporePower" */;
+			buildPhases = (
+				FD3A96C5DB9E31C4393E6A72 /* [CP] Check Pods Manifest.lock */,
+				CEF98D432081AD6500BF1448 /* Sources */,
+				CEF98D442081AD6500BF1448 /* Frameworks */,
+				CEF98D452081AD6500BF1448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingaporePower;
+			productName = SingaporePower;
+			productReference = CEF98D472081AD6500BF1448 /* SingaporePower.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF98D3F2081AD6500BF1448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = VK;
+				TargetAttributes = {
+					CEF98D462081AD6500BF1448 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = CEF98D422081AD6500BF1448 /* Build configuration list for PBXProject "SingaporePower" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEF98D3E2081AD6500BF1448;
+			productRefGroup = CEF98D482081AD6500BF1448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF98D462081AD6500BF1448 /* SingaporePower */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF98D452081AD6500BF1448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF98D552081AD6700BF1448 /* LaunchScreen.storyboard in Resources */,
+				CEF98D522081AD6700BF1448 /* Assets.xcassets in Resources */,
+				CEF98D502081AD6500BF1448 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD3A96C5DB9E31C4393E6A72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SingaporePower-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF98D432081AD6500BF1448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF98D642081ADB600BF1448 /* ViewController.swift in Sources */,
+				CEF98D632081ADB600BF1448 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEF98D4E2081AD6500BF1448 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF98D4F2081AD6500BF1448 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEF98D532081AD6700BF1448 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF98D542081AD6700BF1448 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF98D572081AD6700BF1448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEF98D582081AD6700BF1448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF98D5A2081AD6700BF1448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C8A130EFA3247EE35079B94 /* Pods-SingaporePower.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4569BGYW;
+				INFOPLIST_FILE = SingaporePower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF98D5B2081AD6700BF1448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FCC96D0BB2F71B2B6BDE109 /* Pods-SingaporePower.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4569BGYW;
+				INFOPLIST_FILE = SingaporePower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF98D422081AD6500BF1448 /* Build configuration list for PBXProject "SingaporePower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF98D572081AD6700BF1448 /* Debug */,
+				CEF98D582081AD6700BF1448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF98D592081AD6700BF1448 /* Build configuration list for PBXNativeTarget "SingaporePower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF98D5A2081AD6700BF1448 /* Debug */,
+				CEF98D5B2081AD6700BF1448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF98D3F2081AD6500BF1448 /* Project object */;
+}
