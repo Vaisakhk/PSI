@@ -19,6 +19,7 @@
 		CEF98D742081F4CD00BF1448 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D732081F4CD00BF1448 /* BaseViewController.swift */; };
 		CEF98D772081FB6B00BF1448 /* CLDateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D762081FB6B00BF1448 /* CLDateHandler.swift */; };
 		CEF98D792081FD7D00BF1448 /* PSIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D782081FD7D00BF1448 /* PSIModel.swift */; };
+		CEF98D7B2082239700BF1448 /* PSIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D7A2082239700BF1448 /* PSIDetail.swift */; };
 		E86C24E9FB6F953353F5C780 /* Pods_SingaporePower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		CEF98D732081F4CD00BF1448 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CEF98D762081FB6B00BF1448 /* CLDateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLDateHandler.swift; sourceTree = "<group>"; };
 		CEF98D782081FD7D00BF1448 /* PSIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIModel.swift; sourceTree = "<group>"; };
+		CEF98D7A2082239700BF1448 /* PSIDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIDetail.swift; sourceTree = "<group>"; };
 		FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingaporePower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF98D782081FD7D00BF1448 /* PSIModel.swift */,
+				CEF98D7A2082239700BF1448 /* PSIDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				CEF98D632081ADB600BF1448 /* AppDelegate.swift in Sources */,
 				CEF98D6C2081F1D800BF1448 /* Reachability.swift in Sources */,
 				CEF98D6D2081F1D800BF1448 /* NetworkHandler.swift in Sources */,
+				CEF98D7B2082239700BF1448 /* PSIDetail.swift in Sources */,
 				CEF98D6B2081F1D800BF1448 /* CLAlertHandler.swift in Sources */,
 				CEF98D742081F4CD00BF1448 /* BaseViewController.swift in Sources */,
 				CEF98D792081FD7D00BF1448 /* PSIModel.swift in Sources */,

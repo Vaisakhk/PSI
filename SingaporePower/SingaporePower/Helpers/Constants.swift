@@ -8,6 +8,7 @@ struct Constants {
     struct AlertMessage {
         //Common
         static let errorNetworkFailed = "Unable to connect to the server. Check your connection, then try again."
+        static let noDataAvailable = "Data not available"
     }
     
     struct Api {

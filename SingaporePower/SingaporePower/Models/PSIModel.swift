@@ -9,7 +9,8 @@
 import UIKit
 
 class PSIModel: NSObject {
-    
+    var name = ""
     var latittude = 0.0
     var longittude = 0.0
+    var detail:PSIDetail = PSIDetail()
 }
