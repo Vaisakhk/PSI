@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEF88244208248D500DAAC2D /* VKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF88243208248D500DAAC2D /* VKAnnotationView.swift */; };
+		CEF88246208248F900DAAC2D /* CustomPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF88245208248F900DAAC2D /* CustomPopupView.swift */; };
+		CEF882482082490200DAAC2D /* CustomPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF882472082490200DAAC2D /* CustomPopupView.xib */; };
+		CEF8824F20824C0200DAAC2D /* UIView+BezierPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8824E20824C0200DAAC2D /* UIView+BezierPaths.swift */; };
 		CEF98D502081AD6500BF1448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D4E2081AD6500BF1448 /* Main.storyboard */; };
 		CEF98D522081AD6700BF1448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D512081AD6700BF1448 /* Assets.xcassets */; };
 		CEF98D552081AD6700BF1448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D532081AD6700BF1448 /* LaunchScreen.storyboard */; };
@@ -27,6 +31,10 @@
 /* Begin PBXFileReference section */
 		7FCC96D0BB2F71B2B6BDE109 /* Pods-SingaporePower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePower.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower.release.xcconfig"; sourceTree = "<group>"; };
 		9C8A130EFA3247EE35079B94 /* Pods-SingaporePower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower.debug.xcconfig"; sourceTree = "<group>"; };
+		CEF88243208248D500DAAC2D /* VKAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKAnnotationView.swift; sourceTree = "<group>"; };
+		CEF88245208248F900DAAC2D /* CustomPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
+		CEF882472082490200DAAC2D /* CustomPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPopupView.xib; sourceTree = "<group>"; };
+		CEF8824E20824C0200DAAC2D /* UIView+BezierPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BezierPaths.swift"; sourceTree = "<group>"; };
 		CEF98D472081AD6500BF1448 /* SingaporePower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingaporePower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF98D4F2081AD6500BF1448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEF98D512081AD6700BF1448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +73,14 @@
 				7FCC96D0BB2F71B2B6BDE109 /* Pods-SingaporePower.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CEF8824D20824BF500DAAC2D /* Category And Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEF8824E20824C0200DAAC2D /* UIView+BezierPaths.swift */,
+			);
+			path = "Category And Extension";
 			sourceTree = "<group>";
 		};
 		CEF98D3E2081AD6500BF1448 = {
@@ -121,7 +137,10 @@
 		CEF98D5F2081ADB500BF1448 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CEF88243208248D500DAAC2D /* VKAnnotationView.swift */,
 				CEF98D7C20822CC700BF1448 /* CustomMapView.swift */,
+				CEF88245208248F900DAAC2D /* CustomPopupView.swift */,
+				CEF882472082490200DAAC2D /* CustomPopupView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,6 +157,7 @@
 		CEF98D622081ADB600BF1448 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CEF8824D20824BF500DAAC2D /* Category And Extension */,
 				CEF98D752081FB6B00BF1448 /* DateFormatter */,
 				CEF98D652081F1D800BF1448 /* AlertHandler */,
 				CEF98D6A2081F1D800BF1448 /* Constants.swift */,
@@ -257,6 +277,7 @@
 			files = (
 				CEF98D552081AD6700BF1448 /* LaunchScreen.storyboard in Resources */,
 				CEF98D522081AD6700BF1448 /* Assets.xcassets in Resources */,
+				CEF882482082490200DAAC2D /* CustomPopupView.xib in Resources */,
 				CEF98D502081AD6500BF1448 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,8 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF8824F20824C0200DAAC2D /* UIView+BezierPaths.swift in Sources */,
 				CEF98D722081F49600BF1448 /* ViewController.swift in Sources */,
 				CEF98D7D20822CC700BF1448 /* CustomMapView.swift in Sources */,
+				CEF88246208248F900DAAC2D /* CustomPopupView.swift in Sources */,
 				CEF98D772081FB6B00BF1448 /* CLDateHandler.swift in Sources */,
 				CEF98D632081ADB600BF1448 /* AppDelegate.swift in Sources */,
 				CEF98D6C2081F1D800BF1448 /* Reachability.swift in Sources */,
@@ -316,6 +339,7 @@
 				CEF98D7B2082239700BF1448 /* PSIDetail.swift in Sources */,
 				CEF98D6B2081F1D800BF1448 /* CLAlertHandler.swift in Sources */,
 				CEF98D742081F4CD00BF1448 /* BaseViewController.swift in Sources */,
+				CEF88244208248D500DAAC2D /* VKAnnotationView.swift in Sources */,
 				CEF98D792081FD7D00BF1448 /* PSIModel.swift in Sources */,
 				CEF98D6E2081F1D800BF1448 /* Constants.swift in Sources */,
 			);

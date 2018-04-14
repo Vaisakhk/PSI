@@ -11,7 +11,7 @@ import UIKit
 import MapKit
 
 class CustomMapView: MKMapView ,MKMapViewDelegate {
-
+    var dataArray:[PSIModel] = []
     //MARK:- View Life cycle
     override func awakeFromNib() {
         let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 1.35735, longitude: 103.82)
@@ -22,6 +22,7 @@ class CustomMapView: MKMapView ,MKMapViewDelegate {
     
     //MARK:- Populate Anotations
     func populateAnnotations(data:[PSIModel]) {
+        dataArray.append(contentsOf: data)
          var anotationArray:[MKPointAnnotation] = []
         for i in 0...data.count-1 {
             let psiModel = data[i]
@@ -36,32 +37,57 @@ class CustomMapView: MKMapView ,MKMapViewDelegate {
         }
     }
     
-    func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
-        
-    }
-    
+    //MARK:- MKMap View Delegate
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "") {
-            annotationView.annotation = annotation
-            return annotationView
+//        if let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "vk") {
+//            annotationView.annotation = annotation
+//            return annotationView
+//        } else {
+//            let annotationView = MKPinAnnotationView(annotation:annotation, reuseIdentifier:"vk")
+//            annotationView.isEnabled = true
+//            annotationView.canShowCallout = false
+//            let v = UIView()
+//            v.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+//            v.tag = 1000
+//            v.isHidden = true;
+//            annotationView.addSubview(v)
+//            let btn = UIButton(type: .detailDisclosure)
+//            annotationView.rightCalloutAccessoryView = btn
+//            return annotationView
+//        }
+        var annotationView:VKAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: "kPersonWishListAnnotationName") as? VKAnnotationView
+        
+        if annotationView == nil {
+            annotationView = VKAnnotationView(annotation: annotation, reuseIdentifier: "kPersonWishListAnnotationName")
+            annotationView?.psiModel = getPSIModelWithName(name: annotation.title as? String)
+            
         } else {
-            let annotationView = MKPinAnnotationView(annotation:annotation, reuseIdentifier:"")
-            annotationView.isEnabled = true
-            annotationView.canShowCallout = true
-            let btn = UIButton(type: .detailDisclosure)
-            annotationView.rightCalloutAccessoryView = btn
-            return annotationView
+            annotationView!.annotation = annotation
         }
+        
+        return annotationView
     }
-    
-//    override func view(for annotation: MKAnnotation) -> MKAnnotationView? {
-//        let pinAnotation:MKPinAnnotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "loc")
-//        return pinAnotation
-//    }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        
     }
     
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+    }
 
+     //MARK:- Get PSI Model With Name
+    func getPSIModelWithName(name:String?) -> PSIModel? {
+        for i in 0...dataArray.count-1 {
+            if(dataArray[i].name == name) {
+                return dataArray[i]
+                
+            }
+        }
+//        let predicate = NSPredicate(format: "name MATCHES %@", name!)
+//        let filteredArray = dataArray.filter { predicate.evaluate(with: $0) }
+//        if(filteredArray.count != 0) {
+//           return filteredArray[0]
+//        }
+        return nil
+    }
 }

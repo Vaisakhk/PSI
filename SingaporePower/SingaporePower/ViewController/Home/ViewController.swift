@@ -105,7 +105,6 @@ class ViewController: BaseViewController {
             modelDetail.pm25SubIndex = readingsData[pm25SubIndex]![model.name] as! Double
             modelDetail.psiTwentyFourHourly = readingsData[psiTwentyFourHourly]![model.name] as! Double
             modelDetail.o3EightHourMax = readingsData[o3EightHourMax]![model.name] as! Double
-           
         }
          return modelDetail
     }
