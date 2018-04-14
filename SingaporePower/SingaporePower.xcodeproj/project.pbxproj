@@ -11,7 +11,14 @@
 		CEF98D522081AD6700BF1448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D512081AD6700BF1448 /* Assets.xcassets */; };
 		CEF98D552081AD6700BF1448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D532081AD6700BF1448 /* LaunchScreen.storyboard */; };
 		CEF98D632081ADB600BF1448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D5D2081ADB500BF1448 /* AppDelegate.swift */; };
-		CEF98D642081ADB600BF1448 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D612081ADB600BF1448 /* ViewController.swift */; };
+		CEF98D6B2081F1D800BF1448 /* CLAlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D662081F1D800BF1448 /* CLAlertHandler.swift */; };
+		CEF98D6C2081F1D800BF1448 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D682081F1D800BF1448 /* Reachability.swift */; };
+		CEF98D6D2081F1D800BF1448 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D692081F1D800BF1448 /* NetworkHandler.swift */; };
+		CEF98D6E2081F1D800BF1448 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D6A2081F1D800BF1448 /* Constants.swift */; };
+		CEF98D722081F49600BF1448 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D702081F49600BF1448 /* ViewController.swift */; };
+		CEF98D742081F4CD00BF1448 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D732081F4CD00BF1448 /* BaseViewController.swift */; };
+		CEF98D772081FB6B00BF1448 /* CLDateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D762081FB6B00BF1448 /* CLDateHandler.swift */; };
+		CEF98D792081FD7D00BF1448 /* PSIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF98D782081FD7D00BF1448 /* PSIModel.swift */; };
 		E86C24E9FB6F953353F5C780 /* Pods_SingaporePower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +31,14 @@
 		CEF98D542081AD6700BF1448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF98D562081AD6700BF1448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF98D5D2081ADB500BF1448 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEF98D612081ADB600BF1448 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEF98D662081F1D800BF1448 /* CLAlertHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLAlertHandler.swift; sourceTree = "<group>"; };
+		CEF98D682081F1D800BF1448 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		CEF98D692081F1D800BF1448 /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		CEF98D6A2081F1D800BF1448 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEF98D702081F49600BF1448 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEF98D732081F4CD00BF1448 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CEF98D762081FB6B00BF1448 /* CLDateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLDateHandler.swift; sourceTree = "<group>"; };
+		CEF98D782081FD7D00BF1448 /* PSIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIModel.swift; sourceTree = "<group>"; };
 		FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingaporePower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,10 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				CEF98D5C2081ADB500BF1448 /* AppDelegate */,
-				CEF98D622081ADB600BF1448 /* Helpers */,
-				CEF98D5E2081ADB500BF1448 /* Models */,
 				CEF98D602081ADB600BF1448 /* ViewController */,
 				CEF98D5F2081ADB500BF1448 /* Views */,
+				CEF98D5E2081ADB500BF1448 /* Models */,
+				CEF98D622081ADB600BF1448 /* Helpers */,
 				CEF98D4E2081AD6500BF1448 /* Main.storyboard */,
 				CEF98D512081AD6700BF1448 /* Assets.xcassets */,
 				CEF98D532081AD6700BF1448 /* LaunchScreen.storyboard */,
@@ -94,6 +108,7 @@
 		CEF98D5E2081ADB500BF1448 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CEF98D782081FD7D00BF1448 /* PSIModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,7 +123,8 @@
 		CEF98D602081ADB600BF1448 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CEF98D612081ADB600BF1448 /* ViewController.swift */,
+				CEF98D712081F49600BF1448 /* Base */,
+				CEF98D6F2081F49600BF1448 /* Home */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -116,8 +132,53 @@
 		CEF98D622081ADB600BF1448 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CEF98D752081FB6B00BF1448 /* DateFormatter */,
+				CEF98D652081F1D800BF1448 /* AlertHandler */,
+				CEF98D6A2081F1D800BF1448 /* Constants.swift */,
+				CEF98D672081F1D800BF1448 /* NetowrkHandler */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CEF98D652081F1D800BF1448 /* AlertHandler */ = {
+			isa = PBXGroup;
+			children = (
+				CEF98D662081F1D800BF1448 /* CLAlertHandler.swift */,
+			);
+			path = AlertHandler;
+			sourceTree = "<group>";
+		};
+		CEF98D672081F1D800BF1448 /* NetowrkHandler */ = {
+			isa = PBXGroup;
+			children = (
+				CEF98D682081F1D800BF1448 /* Reachability.swift */,
+				CEF98D692081F1D800BF1448 /* NetworkHandler.swift */,
+			);
+			path = NetowrkHandler;
+			sourceTree = "<group>";
+		};
+		CEF98D6F2081F49600BF1448 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEF98D702081F49600BF1448 /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CEF98D712081F49600BF1448 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CEF98D732081F4CD00BF1448 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CEF98D752081FB6B00BF1448 /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				CEF98D762081FB6B00BF1448 /* CLDateHandler.swift */,
+			);
+			path = DateFormatter;
 			sourceTree = "<group>";
 		};
 		F01BF4422F30D1215536F7E3 /* Frameworks */ = {
@@ -139,6 +200,7 @@
 				CEF98D432081AD6500BF1448 /* Sources */,
 				CEF98D442081AD6500BF1448 /* Frameworks */,
 				CEF98D452081AD6500BF1448 /* Resources */,
+				399B05BE0C0A234DAE0C9E17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +258,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		399B05BE0C0A234DAE0C9E17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD3A96C5DB9E31C4393E6A72 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,8 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF98D642081ADB600BF1448 /* ViewController.swift in Sources */,
+				CEF98D722081F49600BF1448 /* ViewController.swift in Sources */,
+				CEF98D772081FB6B00BF1448 /* CLDateHandler.swift in Sources */,
 				CEF98D632081ADB600BF1448 /* AppDelegate.swift in Sources */,
+				CEF98D6C2081F1D800BF1448 /* Reachability.swift in Sources */,
+				CEF98D6D2081F1D800BF1448 /* NetworkHandler.swift in Sources */,
+				CEF98D6B2081F1D800BF1448 /* CLAlertHandler.swift in Sources */,
+				CEF98D742081F4CD00BF1448 /* BaseViewController.swift in Sources */,
+				CEF98D792081FD7D00BF1448 /* PSIModel.swift in Sources */,
+				CEF98D6E2081F1D800BF1448 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +457,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6C4569BGYW;
 				INFOPLIST_FILE = SingaporePower/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -386,7 +476,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6C4569BGYW;
 				INFOPLIST_FILE = SingaporePower/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
