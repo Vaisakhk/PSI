@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: BaseViewController {
 
+    @IBOutlet weak var mapView: CustomMapView!
+    
     let errorMessage =  "message"
     
     let name =  "name"
@@ -68,6 +70,7 @@ class ViewController: BaseViewController {
     
     //MARK:- Create PSI Model
     func createDate(data:[String : AnyObject])  {
+        var annotationDetails:[PSIModel] = []
         if let regionData:[[String : AnyObject]] =  data[regionMetadata] as? [[String : AnyObject]] {
             for i in 0...regionData.count-1 {
                 let psiMOdel = PSIModel()
@@ -78,10 +81,12 @@ class ViewController: BaseViewController {
                     for j in 0...itemData.count-1 {
                         psiMOdel.detail =  populateReadings(data: itemData[j], model: psiMOdel)
                     }
-                    
                 }
+                annotationDetails.append(psiMOdel)
             }
         }
+        
+        mapView.populateAnnotations(data: annotationDetails)
     }
    
     //MARK:- Create PSI Readings
