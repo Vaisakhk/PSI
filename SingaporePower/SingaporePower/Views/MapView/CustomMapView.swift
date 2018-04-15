@@ -12,6 +12,7 @@ import MapKit
 
 class CustomMapView: MKMapView ,MKMapViewDelegate {
     var dataArray:[PSIModel] = []
+    
     //MARK:- View Life cycle
     override func awakeFromNib() {
         let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 1.35735, longitude: 103.82)
@@ -28,7 +29,6 @@ class CustomMapView: MKMapView ,MKMapViewDelegate {
             let psiModel = data[i]
             let tempAnotation = MKPointAnnotation()
             tempAnotation.title = psiModel.name
-            tempAnotation.subtitle = "Vaisakh krishnan Poovathummoottil House Pezhumpar p o Vadassrikara"
             tempAnotation.coordinate = CLLocationCoordinate2D(latitude: psiModel.latittude, longitude: psiModel.longittude)
             anotationArray.append(tempAnotation)
         }
@@ -55,10 +55,10 @@ class CustomMapView: MKMapView ,MKMapViewDelegate {
 //            annotationView.rightCalloutAccessoryView = btn
 //            return annotationView
 //        }
-        var annotationView:VKAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: "kPersonWishListAnnotationName") as? VKAnnotationView
+        var annotationView:VKAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: "kAnnotationName") as? VKAnnotationView
         
         if annotationView == nil {
-            annotationView = VKAnnotationView(annotation: annotation, reuseIdentifier: "kPersonWishListAnnotationName")
+            annotationView = VKAnnotationView(annotation: annotation, reuseIdentifier: "kAnnotationName")
             annotationView?.psiModel = getPSIModelWithName(name: annotation.title as? String)
             
         } else {
@@ -77,10 +77,9 @@ class CustomMapView: MKMapView ,MKMapViewDelegate {
 
      //MARK:- Get PSI Model With Name
     func getPSIModelWithName(name:String?) -> PSIModel? {
-        for i in 0...dataArray.count-1 {
+        for i in 0..<dataArray.count {
             if(dataArray[i].name == name) {
                 return dataArray[i]
-                
             }
         }
 //        let predicate = NSPredicate(format: "name MATCHES %@", name!)

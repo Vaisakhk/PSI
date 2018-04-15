@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import Nimble
+import Quick
 
 @testable import SingaporePower
 //@testable import PSIModel
@@ -16,17 +18,42 @@ class SingaporePowerTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        testViewController()
+        testController()
+        testModel()
+        testView()
     }
     
-    func testViewController () {
+    func testController () {
         let v = ViewController()
-        
+    
         XCTAssertEqual(v.createDate(data: [:]),[], "Data Set Correct")
-//        let psiModel = PSIModel()
-//        let psiModelDetail = PSIDetail()
-//        XCTAssertEqual(v.populateReadings(data: [:], model: psiModel)
-//            ,psiModelDetail, "Data Set Correct")
+        expect(v.createDate(data: [:])).to(equal([]), description: "Data Set Correct")
+        
+        expect(v.createDate(data: [:])).to(equal([]))
+        let psiModel = PSIModel()
+        expect(v.populateReadings(data: [:], model: psiModel)).to(beAKindOf(PSIDetail.self))
+    }
+    
+    
+    func testModel() {
+        let psiModel = PSIModel()
+        expect(psiModel.name).to(beAKindOf(String.self))
+        expect(psiModel.latittude).to(beAKindOf(Double.self))
+        expect(psiModel.longittude).to(beAKindOf(Double.self))
+        expect(psiModel.detail).to(beAKindOf(PSIDetail.self))
+    }
+    
+    func testView() {
+        let customMapView = CustomMapView()
+         expect(customMapView.getPSIModelWithName(name: nil)).to(beNil())
+         expect(customMapView.getPSIModelWithName(name: "")).to(beNil())
+         let psiModel = PSIModel()
+         psiModel.name = "TestName"
+         customMapView.dataArray = [psiModel]
+         expect(customMapView.getPSIModelWithName(name: "TestName")).to(beAKindOf(PSIModel.self))
+        
+//        let customPopupView = CustomPopupView()
+//        expect(customPopupView.populatePSIReadings(readings: nil)).
     }
     
     override func tearDown() {
