@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832A822ADBCCEAE8EAF3262B /* Pods_SingaporePowerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC2F51325615004326450B1 /* Pods_SingaporePowerUITests.framework */; };
+		B5992BE5289186D441ED9600 /* Pods_SingaporePowerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE3CA271E546CDB7171D38F /* Pods_SingaporePowerTests.framework */; };
 		CEF88244208248D500DAAC2D /* VKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF88243208248D500DAAC2D /* VKAnnotationView.swift */; };
 		CEF88246208248F900DAAC2D /* CustomPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF88245208248F900DAAC2D /* CustomPopupView.swift */; };
 		CEF882482082490200DAAC2D /* CustomPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF882472082490200DAAC2D /* CustomPopupView.xib */; };
 		CEF8824F20824C0200DAAC2D /* UIView+BezierPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8824E20824C0200DAAC2D /* UIView+BezierPaths.swift */; };
+		CEF882AD208272DD00DAAC2D /* SingaporePowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF882AC208272DD00DAAC2D /* SingaporePowerUITests.swift */; };
+		CEF882BB208272E500DAAC2D /* SingaporePowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF882BA208272E500DAAC2D /* SingaporePowerTests.swift */; };
 		CEF98D502081AD6500BF1448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D4E2081AD6500BF1448 /* Main.storyboard */; };
 		CEF98D522081AD6700BF1448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D512081AD6700BF1448 /* Assets.xcassets */; };
 		CEF98D552081AD6700BF1448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF98D532081AD6700BF1448 /* LaunchScreen.storyboard */; };
@@ -28,13 +32,41 @@
 		E86C24E9FB6F953353F5C780 /* Pods_SingaporePower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CEF882AF208272DD00DAAC2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF98D3F2081AD6500BF1448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF98D462081AD6500BF1448;
+			remoteInfo = SingaporePower;
+		};
+		CEF882BD208272E500DAAC2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF98D3F2081AD6500BF1448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF98D462081AD6500BF1448;
+			remoteInfo = SingaporePower;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4AE3CA271E546CDB7171D38F /* Pods_SingaporePowerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingaporePowerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CABEF4769B4BC6BFC441DE /* Pods-SingaporePowerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePowerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePowerUITests/Pods-SingaporePowerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AC2F51325615004326450B1 /* Pods_SingaporePowerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingaporePowerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCC96D0BB2F71B2B6BDE109 /* Pods-SingaporePower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePower.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower.release.xcconfig"; sourceTree = "<group>"; };
 		9C8A130EFA3247EE35079B94 /* Pods-SingaporePower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower.debug.xcconfig"; sourceTree = "<group>"; };
+		A2D24346B4765658AF76CCF2 /* Pods-SingaporePowerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePowerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePowerUITests/Pods-SingaporePowerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B20C40E18F8262CEAC5BE1E4 /* Pods-SingaporePowerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePowerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePowerTests/Pods-SingaporePowerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEF88243208248D500DAAC2D /* VKAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKAnnotationView.swift; sourceTree = "<group>"; };
 		CEF88245208248F900DAAC2D /* CustomPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
 		CEF882472082490200DAAC2D /* CustomPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPopupView.xib; sourceTree = "<group>"; };
 		CEF8824E20824C0200DAAC2D /* UIView+BezierPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BezierPaths.swift"; sourceTree = "<group>"; };
+		CEF882AA208272DD00DAAC2D /* SingaporePowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingaporePowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF882AC208272DD00DAAC2D /* SingaporePowerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingaporePowerUITests.swift; sourceTree = "<group>"; };
+		CEF882AE208272DD00DAAC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF882B8208272E500DAAC2D /* SingaporePowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingaporePowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF882BA208272E500DAAC2D /* SingaporePowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingaporePowerTests.swift; sourceTree = "<group>"; };
+		CEF882BC208272E500DAAC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF98D472081AD6500BF1448 /* SingaporePower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingaporePower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF98D4F2081AD6500BF1448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEF98D512081AD6700BF1448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,10 +83,27 @@
 		CEF98D782081FD7D00BF1448 /* PSIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIModel.swift; sourceTree = "<group>"; };
 		CEF98D7A2082239700BF1448 /* PSIDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIDetail.swift; sourceTree = "<group>"; };
 		CEF98D7C20822CC700BF1448 /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
+		E080A4F38D7219025798CAF6 /* Pods-SingaporePowerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingaporePowerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingaporePowerTests/Pods-SingaporePowerTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingaporePower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CEF882A7208272DD00DAAC2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832A822ADBCCEAE8EAF3262B /* Pods_SingaporePowerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF882B5208272E500DAAC2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5992BE5289186D441ED9600 /* Pods_SingaporePowerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEF98D442081AD6500BF1448 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +120,10 @@
 			children = (
 				9C8A130EFA3247EE35079B94 /* Pods-SingaporePower.debug.xcconfig */,
 				7FCC96D0BB2F71B2B6BDE109 /* Pods-SingaporePower.release.xcconfig */,
+				B20C40E18F8262CEAC5BE1E4 /* Pods-SingaporePowerTests.debug.xcconfig */,
+				E080A4F38D7219025798CAF6 /* Pods-SingaporePowerTests.release.xcconfig */,
+				53CABEF4769B4BC6BFC441DE /* Pods-SingaporePowerUITests.debug.xcconfig */,
+				A2D24346B4765658AF76CCF2 /* Pods-SingaporePowerUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -83,10 +136,30 @@
 			path = "Category And Extension";
 			sourceTree = "<group>";
 		};
+		CEF882AB208272DD00DAAC2D /* SingaporePowerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEF882AC208272DD00DAAC2D /* SingaporePowerUITests.swift */,
+				CEF882AE208272DD00DAAC2D /* Info.plist */,
+			);
+			path = SingaporePowerUITests;
+			sourceTree = "<group>";
+		};
+		CEF882B9208272E500DAAC2D /* SingaporePowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEF882BA208272E500DAAC2D /* SingaporePowerTests.swift */,
+				CEF882BC208272E500DAAC2D /* Info.plist */,
+			);
+			path = SingaporePowerTests;
+			sourceTree = "<group>";
+		};
 		CEF98D3E2081AD6500BF1448 = {
 			isa = PBXGroup;
 			children = (
 				CEF98D492081AD6500BF1448 /* SingaporePower */,
+				CEF882AB208272DD00DAAC2D /* SingaporePowerUITests */,
+				CEF882B9208272E500DAAC2D /* SingaporePowerTests */,
 				CEF98D482081AD6500BF1448 /* Products */,
 				67B61593122E86C712877839 /* Pods */,
 				F01BF4422F30D1215536F7E3 /* Frameworks */,
@@ -97,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				CEF98D472081AD6500BF1448 /* SingaporePower.app */,
+				CEF882AA208272DD00DAAC2D /* SingaporePowerUITests.xctest */,
+				CEF882B8208272E500DAAC2D /* SingaporePowerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,6 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				FD53C26A0FF74077371852AB /* Pods_SingaporePower.framework */,
+				4AE3CA271E546CDB7171D38F /* Pods_SingaporePowerTests.framework */,
+				6AC2F51325615004326450B1 /* Pods_SingaporePowerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +295,46 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CEF882A9208272DD00DAAC2D /* SingaporePowerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF882B1208272DD00DAAC2D /* Build configuration list for PBXNativeTarget "SingaporePowerUITests" */;
+			buildPhases = (
+				DD04BD2843FBACF93375006A /* [CP] Check Pods Manifest.lock */,
+				CEF882A6208272DD00DAAC2D /* Sources */,
+				CEF882A7208272DD00DAAC2D /* Frameworks */,
+				CEF882A8208272DD00DAAC2D /* Resources */,
+				75E66B5BD8CE57D7C60D1FD1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEF882B0208272DD00DAAC2D /* PBXTargetDependency */,
+			);
+			name = SingaporePowerUITests;
+			productName = SingaporePowerUITests;
+			productReference = CEF882AA208272DD00DAAC2D /* SingaporePowerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CEF882B7208272E500DAAC2D /* SingaporePowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF882BF208272E500DAAC2D /* Build configuration list for PBXNativeTarget "SingaporePowerTests" */;
+			buildPhases = (
+				02489AB228422212F62942BF /* [CP] Check Pods Manifest.lock */,
+				CEF882B4208272E500DAAC2D /* Sources */,
+				CEF882B5208272E500DAAC2D /* Frameworks */,
+				CEF882B6208272E500DAAC2D /* Resources */,
+				3BB54C6FF73E47047D1BC58A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEF882BE208272E500DAAC2D /* PBXTargetDependency */,
+			);
+			name = SingaporePowerTests;
+			productName = SingaporePowerTests;
+			productReference = CEF882B8208272E500DAAC2D /* SingaporePowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CEF98D462081AD6500BF1448 /* SingaporePower */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEF98D592081AD6700BF1448 /* Build configuration list for PBXNativeTarget "SingaporePower" */;
@@ -247,6 +364,14 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = VK;
 				TargetAttributes = {
+					CEF882A9208272DD00DAAC2D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = CEF98D462081AD6500BF1448;
+					};
+					CEF882B7208272E500DAAC2D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = CEF98D462081AD6500BF1448;
+					};
 					CEF98D462081AD6500BF1448 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -266,11 +391,27 @@
 			projectRoot = "";
 			targets = (
 				CEF98D462081AD6500BF1448 /* SingaporePower */,
+				CEF882A9208272DD00DAAC2D /* SingaporePowerUITests */,
+				CEF882B7208272E500DAAC2D /* SingaporePowerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CEF882A8208272DD00DAAC2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF882B6208272E500DAAC2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEF98D452081AD6500BF1448 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,6 +426,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		02489AB228422212F62942BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SingaporePowerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		399B05BE0C0A234DAE0C9E17 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,14 +452,74 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingaporePower/Pods-SingaporePower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BB54C6FF73E47047D1BC58A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SingaporePowerTests/Pods-SingaporePowerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingaporePowerTests/Pods-SingaporePowerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75E66B5BD8CE57D7C60D1FD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SingaporePowerUITests/Pods-SingaporePowerUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingaporePowerUITests/Pods-SingaporePowerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD04BD2843FBACF93375006A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SingaporePowerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD3A96C5DB9E31C4393E6A72 /* [CP] Check Pods Manifest.lock */ = {
@@ -324,6 +543,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CEF882A6208272DD00DAAC2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF882AD208272DD00DAAC2D /* SingaporePowerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF882B4208272E500DAAC2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF882BB208272E500DAAC2D /* SingaporePowerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEF98D432081AD6500BF1448 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,6 +582,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CEF882B0208272DD00DAAC2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF98D462081AD6500BF1448 /* SingaporePower */;
+			targetProxy = CEF882AF208272DD00DAAC2D /* PBXContainerItemProxy */;
+		};
+		CEF882BE208272E500DAAC2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF98D462081AD6500BF1448 /* SingaporePower */;
+			targetProxy = CEF882BD208272E500DAAC2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		CEF98D4E2081AD6500BF1448 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -367,6 +615,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CEF882B2208272DD00DAAC2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CABEF4769B4BC6BFC441DE /* Pods-SingaporePowerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4569BGYW;
+				INFOPLIST_FILE = SingaporePowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SingaporePower;
+			};
+			name = Debug;
+		};
+		CEF882B3208272DD00DAAC2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D24346B4765658AF76CCF2 /* Pods-SingaporePowerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4569BGYW;
+				INFOPLIST_FILE = SingaporePowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SingaporePower;
+			};
+			name = Release;
+		};
+		CEF882C0208272E500DAAC2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20C40E18F8262CEAC5BE1E4 /* Pods-SingaporePowerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4569BGYW;
+				INFOPLIST_FILE = SingaporePowerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingaporePower.app/SingaporePower";
+			};
+			name = Debug;
+		};
+		CEF882C1208272E500DAAC2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E080A4F38D7219025798CAF6 /* Pods-SingaporePowerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4569BGYW;
+				INFOPLIST_FILE = SingaporePowerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingaporePower.app/SingaporePower";
+			};
+			name = Release;
+		};
 		CEF98D572081AD6700BF1448 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -487,12 +801,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6C4569BGYW;
 				INFOPLIST_FILE = SingaporePower/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,12 +818,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6C4569BGYW;
 				INFOPLIST_FILE = SingaporePower/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VK.SingaporePower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -522,6 +832,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CEF882B1208272DD00DAAC2D /* Build configuration list for PBXNativeTarget "SingaporePowerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF882B2208272DD00DAAC2D /* Debug */,
+				CEF882B3208272DD00DAAC2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF882BF208272E500DAAC2D /* Build configuration list for PBXNativeTarget "SingaporePowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF882C0208272E500DAAC2D /* Debug */,
+				CEF882C1208272E500DAAC2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEF98D422081AD6500BF1448 /* Build configuration list for PBXProject "SingaporePower" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

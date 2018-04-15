@@ -1,16 +1,28 @@
 PODS:
   - Alamofire (4.6.0)
+  - Nimble (7.0.3)
+  - PKHUD (5.0.0)
+  - Quick (1.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
+  - Nimble
+  - PKHUD (~> 5.0)
+  - Quick
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Nimble
+    - PKHUD
+    - Quick
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: f36cce341432ad63b301cafa49c2277833b33133
+PODFILE CHECKSUM: a55fe0a3ffca607100c5a196404a6905a6d1df1b
 
 COCOAPODS: 1.5.0

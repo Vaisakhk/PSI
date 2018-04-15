@@ -16,12 +16,12 @@ class VKAnnotationView: MKAnnotationView {
     
     var psiModel:PSIModel?
     weak var customCalloutView: CustomPopupView?
+    
     override var annotation: MKAnnotation? {
         willSet { customCalloutView?.removeFromSuperview() }
     }
     
     // MARK: - life cycle
-    
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         self.canShowCallout = false

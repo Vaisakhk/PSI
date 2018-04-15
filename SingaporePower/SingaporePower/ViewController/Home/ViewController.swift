@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ViewController: BaseViewController {
+import PKHUD
 
+class ViewController: BaseViewController {
+    
     @IBOutlet weak var mapView: CustomMapView!
+    @IBOutlet weak var refreshButton: UIButton!
     
     let errorMessage =  "message"
     
@@ -41,35 +44,43 @@ class ViewController: BaseViewController {
         
         getPSiDetails()
     }
-
+    
     //MARK:- GET PSI Details
     func getPSiDetails() {
-      let dateTime =  CLDateHandler.sharedHandlerInsatnce.convertDateToFormatedString(currentDate: Date(), formatedString: "YYYY-MM-dd'T'HH:mm:ss", timezone: TimeZone.current)
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show(onView: self.mapView)
+        let dateTime =  CLDateHandler.sharedHandlerInsatnce.convertDateToFormatedString(currentDate: Date(), formatedString: "YYYY-MM-dd'T'HH:mm:ss", timezone: TimeZone.current)
         let date =  CLDateHandler.sharedHandlerInsatnce.convertDateToFormatedString(currentDate: Date(), formatedString: "YYYY-MM-dd", timezone: TimeZone.current)
         let urlString = String(format: "%@date_time=%@&date=%@", Constants.Api.BASEURL,dateTime,date)
         let headerData:[String:String] = RequestHeaderGenerator.sharedInstance.headerBody()
         let netWorkHandler:NetworkHandler = NetworkHandler().initWithRequest(requestUrl: URL(string: urlString)!, data: nil, methodType: .MethodTypeGET, headerDictionary: headerData);
         netWorkHandler.startServieRequest(success: { (response, statusCode) in
-            if let datas:[String : AnyObject] = response as? [String : AnyObject] {
-                if statusCode == 200 {
-                    self.createDate(data: datas)
+            DispatchQueue.main.async {
+                PKHUD.sharedHUD.hide()
+                if let datas:[String : AnyObject] = response as? [String : AnyObject] {
+                    if statusCode == 200 {
+                        self.mapView.populateAnnotations(data: self.createDate(data: datas))
+                    }else {
+                        self.processAlert(message: datas[self.errorMessage] as! String)
+                    }
                 }else {
-                    self.processAlert(message: datas[self.errorMessage] as! String)
+                    self.processAlert(message: Constants.AlertMessage.noDataAvailable)
                 }
-            }else {
-                self.processAlert(message: Constants.AlertMessage.noDataAvailable)
             }
         }) { (error, statuscode, erroResponse) in
-            if(statuscode == 1024) {
-                self.processAlert(message: error.localizedDescription)
-            }else {
-                self.processAlert(message: Constants.AlertMessage.errorNetworkFailed)
+            DispatchQueue.main.async {
+                PKHUD.sharedHUD.hide()
+                if(statuscode == 1024) {
+                    self.processAlert(message: error.localizedDescription)
+                }else {
+                    self.processAlert(message: Constants.AlertMessage.errorNetworkFailed)
+                }
             }
         }
     }
     
     //MARK:- Create PSI Model
-    func createDate(data:[String : AnyObject])  {
+    func createDate(data:[String : AnyObject]) -> [PSIModel]  {
         var annotationDetails:[PSIModel] = []
         if let regionData:[[String : AnyObject]] =  data[regionMetadata] as? [[String : AnyObject]] {
             for i in 0...regionData.count-1 {
@@ -77,7 +88,7 @@ class ViewController: BaseViewController {
                 psiMOdel.name = regionData[i][name] as! String
                 psiMOdel.latittude = regionData[i][labelLocation]![latitude] as! Double
                 psiMOdel.longittude = regionData[i][labelLocation]![longitude] as! Double
-                 if let itemData:[[String : AnyObject]] =  data[items] as? [[String : AnyObject]] {
+                if let itemData:[[String : AnyObject]] =  data[items] as? [[String : AnyObject]] {
                     for j in 0...itemData.count-1 {
                         psiMOdel.detail =  populateReadings(data: itemData[j], model: psiMOdel)
                     }
@@ -85,10 +96,9 @@ class ViewController: BaseViewController {
                 annotationDetails.append(psiMOdel)
             }
         }
-        
-        mapView.populateAnnotations(data: annotationDetails)
+        return annotationDetails
     }
-   
+    
     //MARK:- Create PSI Readings
     func populateReadings(data:[String : AnyObject], model:PSIModel) -> PSIDetail {
         let modelDetail = PSIDetail()
@@ -106,7 +116,12 @@ class ViewController: BaseViewController {
             modelDetail.psiTwentyFourHourly = readingsData[psiTwentyFourHourly]![model.name] as! Double
             modelDetail.o3EightHourMax = readingsData[o3EightHourMax]![model.name] as! Double
         }
-         return modelDetail
+        return modelDetail
+    }
+    
+    //MARK:- UIView Action
+    @IBAction func refreshButtonAction(_ sender: Any) {
+        getPSiDetails()
     }
     
     //MARK:- Process Alert
