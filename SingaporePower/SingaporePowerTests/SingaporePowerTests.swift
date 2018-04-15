@@ -51,9 +51,6 @@ class SingaporePowerTests: XCTestCase {
          psiModel.name = "TestName"
          customMapView.dataArray = [psiModel]
          expect(customMapView.getPSIModelWithName(name: "TestName")).to(beAKindOf(PSIModel.self))
-        
-//        let customPopupView = CustomPopupView()
-//        expect(customPopupView.populatePSIReadings(readings: nil)).
     }
     
     override func tearDown() {

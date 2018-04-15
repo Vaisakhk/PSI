@@ -39,6 +39,7 @@ class CustomMapView: MKMapView ,MKMapViewDelegate {
     
     //MARK:- MKMap View Delegate
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//UNCOMMENT BELOW LINES AND COMMENT REMAINING WILL DISPLAY DEFAULT ANNOTATIONS
 //        if let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "vk") {
 //            annotationView.annotation = annotation
 //            return annotationView

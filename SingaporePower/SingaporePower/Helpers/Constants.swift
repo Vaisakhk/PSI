@@ -1,7 +1,5 @@
 import UIKit
 
-
-
 struct Constants {
     static let appName = Bundle.main.infoDictionary![kCFBundleNameKey as String] as! String
     
